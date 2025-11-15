@@ -36,6 +36,7 @@ struct radv_bvh_aabb_node {
    uint32_t reserved[14];
 };
 
+#if 0
 struct radv_bvh_instance_node {
    uint64_t bvh_ptr; /* pre-shifted/masked to serve as node base */
 
@@ -53,6 +54,7 @@ struct radv_bvh_instance_node {
    /* Object to world matrix transposed from the initial transform. */
    mat3x4 otw_matrix;
 };
+#endif
 
 
 
